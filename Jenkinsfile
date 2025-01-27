@@ -22,7 +22,7 @@ pipeline {
 			steps {
 				script {
 					echo 'building docker image...'
-					dockerImage = docker.build("${DOCKER_HUB_REPO}:latest")
+					sh '/opt/homebrew/bin/docker build -t kavya0409/gitopsproject:latest .'
 				}
 			}
 		}
