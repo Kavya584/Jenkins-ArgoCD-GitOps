@@ -22,7 +22,7 @@ pipeline {
 			steps {
 				script {
 					echo 'building docker image...'
-					docker.build("${DOCKER_HUB_REPO}:latest")
+					dockerImage = docker.build("${DOCKER_HUB_REPO}:latest")
 				}
 			}
 		}
