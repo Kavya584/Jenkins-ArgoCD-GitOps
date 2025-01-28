@@ -5,7 +5,7 @@ pipeline {
 	}
 	environment {
 		DOCKER_HUB_REPO = 'kavya0409/gitopsproject'
-		DOCKER_HUB_CREDENTIALS_ID = 'Docker'
+		DOCKER_HUB_CREDENTIALS_ID = 'gitops-dockerhub'
 	}
 	stages {
 		stage('Checkout Github'){
